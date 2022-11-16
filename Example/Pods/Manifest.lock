@@ -1,0 +1,16 @@
+PODS:
+  - HashingSwift (0.1.0)
+
+DEPENDENCIES:
+  - HashingSwift (from `../`)
+
+EXTERNAL SOURCES:
+  HashingSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HashingSwift: 857fce9d4cf176a2be0dd95d73df138402797877
+
+PODFILE CHECKSUM: bd8578bc23b372bf8492a6bc576031f7bc9ee273
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'HashingSwift_Example' do
+  pod 'HashingSwift', :path => '../'
+
+  target 'HashingSwift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
