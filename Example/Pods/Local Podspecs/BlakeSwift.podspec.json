@@ -1,0 +1,30 @@
+{
+  "name": "BlakeSwift",
+  "version": "1.0.0",
+  "summary": "Swift library for Blake2b",
+  "homepage": "https://github.com/sublabdev/blake-swift",
+  "license": {
+    "type": "Apache 2.0",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tigran Iskandaryan": "tiger@sublab.dev"
+  },
+  "source": {
+    "git": "https://github.com/sublabdev/blake-swift.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": [
+    "BlakeSwift/Classes/**/*",
+    "BlakeSwift/CBlake2/**/*.{h,c}"
+  ],
+  "public_header_files": "BlakeSwift/CBlake2/include/*.h",
+  "dependencies": {
+    "CommonSwift": [
+
+    ]
+  }
+}
