@@ -1,6 +1,0 @@
-framework module BlakeSwift {
-  umbrella header "BlakeSwift-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -22,13 +22,13 @@
     "CommonSwift": [
 
     ],
-    "BlakeSwift": [
-
-    ],
     "xxHash-Swift": [
 
     ],
     "Base58Swift": [
+
+    ],
+    "Blake2": [
 
     ]
   }

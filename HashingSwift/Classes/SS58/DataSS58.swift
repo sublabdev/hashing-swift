@@ -15,7 +15,7 @@ public struct DataSS58 {
         var publicKey: Data?
         
         if data.count > SS58.publicKeySize {
-            publicKey = data.hashing.blake2b_256()
+            publicKey = try data.hashing.blake2b_256()
         } else {
             publicKey = data
         }
@@ -46,13 +46,12 @@ public struct DataSS58 {
         
         let networkTypeData = Data(networkType.compactMap { $0 })
         
-        guard
-            networkTypeData.count == networkTypeLength,
-            let checksum = (prefix + networkTypeData + publicKey).hashing.blake2b_512()?[0..<SS58.prefixSize]
+        guard networkTypeData.count == networkTypeLength
         else {
             throw SS58.Error.internal
         }
         
+        let checksum = try (prefix + networkTypeData + publicKey).hashing.blake2b_512()[0..<SS58.prefixSize]
         return (networkTypeData + publicKey + checksum).base58.encode()
     }
 }

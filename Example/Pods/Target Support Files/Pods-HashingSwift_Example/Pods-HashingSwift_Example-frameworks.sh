@@ -178,7 +178,7 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Base58Swift/Base58Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/BlakeSwift/BlakeSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Blake2/Blake2.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CommonSwift/CommonSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HashingSwift/HashingSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/xxHash-Swift/xxHash_Swift.framework"
@@ -186,7 +186,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Base58Swift/Base58Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/BlakeSwift/BlakeSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Blake2/Blake2.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CommonSwift/CommonSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HashingSwift/HashingSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/xxHash-Swift/xxHash_Swift.framework"

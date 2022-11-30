@@ -19,7 +19,7 @@ public struct StringSS58 {
             }
             
             let checkData = prefixData + decodedData[0..<networkTypeLength] + publicKey
-            let checksum = checkData.hashing.blake2b_512()?[0..<SS58.prefixSize]
+            let checksum = try checkData.hashing.blake2b_512()[0..<SS58.prefixSize]
             let checkFrom = networkTypeLength + SS58.publicKeySize
             let check = decodedData[checkFrom..<checkFrom + SS58.prefixSize]
             

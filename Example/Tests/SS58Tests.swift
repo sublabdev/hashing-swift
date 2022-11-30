@@ -1,11 +1,11 @@
 import XCTest
 import HashingSwift
 
-class TestSS58: XCTestCase {
+class SS58Tests: XCTestCase {
     private let testCases: [TestCase] = [
         .init(
-            value: "HNZata7iMYWmk5RvZRTiAsSDhV8366zq2YGb3tLH5Upf74F",
-            expectedHash: "0xd43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d".hex.decode()
+            value: "J3f13B92p6aMcoHxfjz4VyDRhtQt23SgzZy5NfTz3fz2wvR",
+            expectedHash: "0xf206618f046df7204d07788a8449d7eb08811b44cdf51afde3efd4c4fcd4dd6e".hex.decode()
         ),
         .init(
             value: "jHEP5XeYLTTGzjhXroSczrWbV928KaxDQiQH6WakYtRjWuUzK",

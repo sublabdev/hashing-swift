@@ -2,19 +2,18 @@ PODS:
   - Base58Swift (2.1.10):
     - BigInt (~> 5.0.0)
   - BigInt (5.0.0)
-  - BlakeSwift (1.0.0):
-    - CommonSwift
+  - Blake2 (0.1.2)
   - CommonSwift (1.0.0)
   - HashingSwift (1.0.0):
     - Base58Swift
-    - BlakeSwift
+    - Blake2
     - CommonSwift
     - xxHash-Swift
   - xxHash-Swift (1.1.1)
 
 DEPENDENCIES:
   - Base58Swift
-  - BlakeSwift (from `https://github.com/sublabdev/blake-swift.git`, commit `a2961b7307cfc7e0b8806635a2b498a9548e0344`)
+  - Blake2
   - CommonSwift (from `https://github.com/sublabdev/common-swift.git`, commit `2afc1ceb1ffc62952186332a08b8a9a739d95f6d`)
   - HashingSwift (from `../`)
   - xxHash-Swift
@@ -23,12 +22,10 @@ SPEC REPOS:
   trunk:
     - Base58Swift
     - BigInt
+    - Blake2
     - xxHash-Swift
 
 EXTERNAL SOURCES:
-  BlakeSwift:
-    :commit: a2961b7307cfc7e0b8806635a2b498a9548e0344
-    :git: https://github.com/sublabdev/blake-swift.git
   CommonSwift:
     :commit: 2afc1ceb1ffc62952186332a08b8a9a739d95f6d
     :git: https://github.com/sublabdev/common-swift.git
@@ -36,9 +33,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 CHECKOUT OPTIONS:
-  BlakeSwift:
-    :commit: a2961b7307cfc7e0b8806635a2b498a9548e0344
-    :git: https://github.com/sublabdev/blake-swift.git
   CommonSwift:
     :commit: 2afc1ceb1ffc62952186332a08b8a9a739d95f6d
     :git: https://github.com/sublabdev/common-swift.git
@@ -46,11 +40,11 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Base58Swift: 53d551f0b33d9478fa63b3445e453a772d6b31a7
   BigInt: 74b4d88367b0e819d9f77393549226d36faeb0d8
-  BlakeSwift: be4542dc598b40616f098cb38aea82759acf2332
+  Blake2: f33072b13349da1b8048a2bf26a3a24d4eac6dcc
   CommonSwift: 66ad1761a6d4bee1896098ea23c63c757eddd1a6
-  HashingSwift: 9da4c325e7a7d7ab04cb5a0cdb135e75d3a3eb69
+  HashingSwift: 87f36fbeb384f72e4754f031d27f7c2a4aad2ad7
   xxHash-Swift: 13ebcbfc48658a5acf3777751e64b18c0f110d25
 
-PODFILE CHECKSUM: 3698d575ac1f21aa0ae381ff111e5c7774cad245
+PODFILE CHECKSUM: 62551d258ab7562b7f459f08d4259934e0e72833
 
 COCOAPODS: 1.11.3

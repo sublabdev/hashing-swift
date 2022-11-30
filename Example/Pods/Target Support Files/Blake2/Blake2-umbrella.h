@@ -10,9 +10,8 @@
 #endif
 #endif
 
-#import "blake2-impl.h"
 #import "blake2.h"
 
-FOUNDATION_EXPORT double BlakeSwiftVersionNumber;
-FOUNDATION_EXPORT const unsigned char BlakeSwiftVersionString[];
+FOUNDATION_EXPORT double Blake2VersionNumber;
+FOUNDATION_EXPORT const unsigned char Blake2VersionString[];
 

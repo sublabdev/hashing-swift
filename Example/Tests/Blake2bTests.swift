@@ -2,7 +2,7 @@ import XCTest
 import HashingSwift
 
 class Blake2bTests: XCTestCase {
-    func testBlake2bWithHash() {
+    func testBlake2bWithHash() throws {
         let testCases = [(
             value: "DQHyqj4mJRegcgFFBmFmXAdCwFhAPLiVFiARBbAoU4EDhMM",
             expectedHash: "0xbcf136a9e09e0a858111de57745c2d143647677aa6d8d28606db3247a164da48".hex.decode()
@@ -14,10 +14,10 @@ class Blake2bTests: XCTestCase {
                 return
             }
 
-            let dataHash = valueData.hashing.blake2b_256()
+            let dataHash = try valueData.hashing.blake2b_256()
             XCTAssertEqual(dataHash, testCase.expectedHash)
             
-            let stringHash = testCase.value.hashing.blake2b_256()
+            let stringHash = try testCase.value.hashing.blake2b_256()
             XCTAssertEqual(stringHash, testCase.expectedHash)
         }
     }

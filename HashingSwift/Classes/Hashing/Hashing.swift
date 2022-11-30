@@ -1,5 +1,4 @@
 import Foundation
-import BlakeSwift
 
 public struct Hashing {
     let data: Data
