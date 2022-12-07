@@ -1,5 +1,6 @@
 import Foundation
 
+/// SS58 handler for String
 public struct StringSS58 {
     private let string: String
     
@@ -7,6 +8,8 @@ public struct StringSS58 {
         self.string = string
     }
     
+    /// Public key from provided String value
+    /// - Returns: The generated public key
     public func publicKey() throws -> Data {
         do {
             let decodedData = try decode()
@@ -33,6 +36,8 @@ public struct StringSS58 {
         }
     }
     
+    /// The network type from provided String value
+    /// - Returns: The network type
     public func networkType() throws -> UInt {
         do {
             let decodedData = try decode()
@@ -56,6 +61,7 @@ public struct StringSS58 {
         }
     }
     
+    // Getting the network type length
     private func networkTypeLength(data: Data) throws -> UInt {
         switch UInt(data[0]) {
         case SS58.networkTypeLengthRange1:
@@ -68,6 +74,7 @@ public struct StringSS58 {
         }
     }
     
+    // Decoding the provided String value using Base58
     private func decode() throws -> Data {
         let result = string.base58.decode()
         
@@ -80,6 +87,7 @@ public struct StringSS58 {
 }
 
 extension String {
+    /// And access point for SS58 functionality for String
     public var ss58: StringSS58 {
         .init(string: self)
     }

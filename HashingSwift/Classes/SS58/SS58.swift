@@ -1,8 +1,9 @@
 import Foundation
 
+/// SS58 constants' holder
 struct SS58 {
+    /// SS58-related errors
     enum Error: Swift.Error {
-        // rename the errors (remove Exception)
         case invalidAddressException
         case invalidChecksumException
         case `internal`

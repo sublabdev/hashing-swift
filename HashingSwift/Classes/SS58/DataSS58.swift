@@ -1,5 +1,6 @@
 import Foundation
 
+/// Wrapper over Data for working with SS58
 public struct DataSS58 {
     private let data: Data
     
@@ -7,6 +8,8 @@ public struct DataSS58 {
         self.data = data
     }
     
+    /// Address for a specific network type
+    ///  - Returns: An address based on the provided network type
     public func address(type: UInt) throws -> String {
         guard let prefix = SS58.prefix.data(using: .utf8) else {
             throw SS58.Error.internal
@@ -57,6 +60,7 @@ public struct DataSS58 {
 }
 
 extension Data {
+    /// An access point to SS58 functionality for Data
     public var ss58: DataSS58 {
         .init(data: self)
     }
