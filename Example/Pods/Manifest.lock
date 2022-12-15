@@ -15,7 +15,7 @@ PODS:
 DEPENDENCIES:
   - Base58Swift
   - Blake2
-  - CommonSwift (from `https://github.com/sublabdev/common-swift.git`, commit `5bdbe0884ebbdaa8bec9b2f73133764c489d180f`)
+  - CommonSwift (from `https://github.com/sublabdev/common-swift.git`, commit `fd97ff6ef1adc54be966e7d2e125127c979af68b`)
   - HashingSwift (from `../`)
   - xxHash-Swift
 
@@ -28,14 +28,14 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   CommonSwift:
-    :commit: 5bdbe0884ebbdaa8bec9b2f73133764c489d180f
+    :commit: fd97ff6ef1adc54be966e7d2e125127c979af68b
     :git: https://github.com/sublabdev/common-swift.git
   HashingSwift:
     :path: "../"
 
 CHECKOUT OPTIONS:
   CommonSwift:
-    :commit: 5bdbe0884ebbdaa8bec9b2f73133764c489d180f
+    :commit: fd97ff6ef1adc54be966e7d2e125127c979af68b
     :git: https://github.com/sublabdev/common-swift.git
 
 SPEC CHECKSUMS:
@@ -46,6 +46,6 @@ SPEC CHECKSUMS:
   HashingSwift: 87f36fbeb384f72e4754f031d27f7c2a4aad2ad7
   xxHash-Swift: 13ebcbfc48658a5acf3777751e64b18c0f110d25
 
-PODFILE CHECKSUM: 57eca605f4f09a5592d96722f9e63adcbb7dfe4c
+PODFILE CHECKSUM: 2285a2d148975825cad70a2dc25a3ab982ed7daa
 
 COCOAPODS: 1.11.3
