@@ -16,7 +16,7 @@ class SS58Tests: XCTestCase {
     func testAddressesDecoding() {
         for testCase in testCases {
             do {
-                let publicKey = try testCase.value.ss58.publicKey()
+                let publicKey = try testCase.value.ss58.accountId()
                 XCTAssertEqual(publicKey, testCase.expectedHash)
                 
                 let networkType = try testCase.value.ss58.networkType()

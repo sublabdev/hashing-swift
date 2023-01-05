@@ -15,6 +15,7 @@
 		0D6A8B58DB8188FDC8A0676784DBFA25 /* Data+Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522E0500E95BB0E53B240981A12310EE /* Data+Copy.swift */; };
 		0F5C9ECEE90197998A3F84B601F00CDC /* Integer Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD924F4999028E3C173D42078D8943 /* Integer Conversion.swift */; };
 		107432B9C4513D8CA1813853560ED60A /* xxHash-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1DD3BB0B94A138E84A7557554B0836B /* xxHash-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		115B43722966E67200AB7708 /* AccountId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B43712966E67200AB7708 /* AccountId.swift */; };
 		1476FA1E31F2DB79274914ADAD76F032 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		1A23C06762DCA48AF8BFA12206D02886 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		1C7520A531E04F42C20B7B557DE40655 /* StringSS58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAE6122DCC2DE363B8669EB78A85718 /* StringSS58.swift */; };
@@ -199,12 +200,13 @@
 		08B0597737EA099763A461AE83C82FB1 /* Base58Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Base58Swift.modulemap; sourceTree = "<group>"; };
 		08FB2CCFBFA81F4CE0DE695B5E64FC5B /* Prime Test.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Prime Test.swift"; path = "Sources/Prime Test.swift"; sourceTree = "<group>"; };
 		09049BB646D91C0A133D17CD327ACA7E /* HashingSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HashingSwift.debug.xcconfig; sourceTree = "<group>"; };
-		0C5A88BE6211A274FAA4AD642787F237 /* blake2sp-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "blake2sp-ref.c"; path = "Sources/CBlake2/blake2sp-ref.c"; sourceTree = "<group>"; };
+		0C5A88BE6211A274FAA4AD642787F237 /* blake2sp-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = "blake2sp-ref.c"; path = "Sources/CBlake2/blake2sp-ref.c"; sourceTree = "<group>"; };
 		0D7CA1B8473EA8A72F42A324DF7225A2 /* Base58Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Base58Swift-umbrella.h"; sourceTree = "<group>"; };
 		0E4D66FEB780C921E79C02E183E6FFA8 /* CommonSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonSwift-prefix.pch"; sourceTree = "<group>"; };
 		0E7643C72E439E01801852E78BD92018 /* Pods-HashingSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HashingSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0F6334AF92989B27C87047089D25BC33 /* Shifts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shifts.swift; path = Sources/Shifts.swift; sourceTree = "<group>"; };
-		0FCB4519D12EF184C285895AD01C3609 /* blake2s-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "blake2s-ref.c"; path = "Sources/CBlake2/blake2s-ref.c"; sourceTree = "<group>"; };
+		0FCB4519D12EF184C285895AD01C3609 /* blake2s-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = "blake2s-ref.c"; path = "Sources/CBlake2/blake2s-ref.c"; sourceTree = "<group>"; };
+		115B43712966E67200AB7708 /* AccountId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountId.swift; sourceTree = "<group>"; };
 		125B8CF5D8A9B89C1FCB92E93472BCDE /* xxHash-Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "xxHash-Swift"; path = xxHash_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		129351544A9FCFCE120B1D3C4F109C44 /* Addition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Addition.swift; path = Sources/Addition.swift; sourceTree = "<group>"; };
 		12B61F62B62DE80EA464F5B57B594343 /* Base58.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base58.swift; path = Base58Swift/Base58.swift; sourceTree = "<group>"; };
@@ -224,7 +226,7 @@
 		2E4DF0D89C88E71EB30AF14B8A7EA15A /* Pods-HashingSwift_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HashingSwift_Example"; path = Pods_HashingSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E57EC82F8727B3736B99C7977687193 /* Floating Point Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Floating Point Conversion.swift"; path = "Sources/Floating Point Conversion.swift"; sourceTree = "<group>"; };
 		2ED8B6BF23CDA9CCA9B5B788819EE6EB /* HashingSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HashingSwift-dummy.m"; sourceTree = "<group>"; };
-		2F01D5E7AA972C0B185174026D567EEA /* blake2b-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "blake2b-ref.c"; path = "Sources/CBlake2/blake2b-ref.c"; sourceTree = "<group>"; };
+		2F01D5E7AA972C0B185174026D567EEA /* blake2b-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = "blake2b-ref.c"; path = "Sources/CBlake2/blake2b-ref.c"; sourceTree = "<group>"; };
 		308BA29447729090CFE8A708BABD1A78 /* blake2-impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "blake2-impl.h"; path = "Sources/CBlake2/blake2-impl.h"; sourceTree = "<group>"; };
 		30A3A99931398C814E28DBE8ACF47CBB /* xxHash-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "xxHash-Swift-prefix.pch"; sourceTree = "<group>"; };
 		31BE59721C2E98FA4C40794398189516 /* blake2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blake2.h; path = Sources/CBlake2/include/blake2.h; sourceTree = "<group>"; };
@@ -234,12 +236,12 @@
 		379C2D00E88F4BE6979E21F0FDA3B7EA /* CommonSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CommonSwift-Info.plist"; sourceTree = "<group>"; };
 		398E1CAAA4FA3E33B17007AD927C630B /* DataBase58.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataBase58.swift; sourceTree = "<group>"; };
 		3B218C4FBBCBB89D377FA4D5F75367F0 /* Blake2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Blake2.release.xcconfig; sourceTree = "<group>"; };
-		3C6368B658D43AF313EF1EAAC4616C5A /* blake2bp-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "blake2bp-ref.c"; path = "Sources/CBlake2/blake2bp-ref.c"; sourceTree = "<group>"; };
+		3C6368B658D43AF313EF1EAAC4616C5A /* blake2bp-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = "blake2bp-ref.c"; path = "Sources/CBlake2/blake2bp-ref.c"; sourceTree = "<group>"; };
 		440E3DF861F6F1A030630F7F67E24540 /* HashingSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HashingSwift-prefix.pch"; sourceTree = "<group>"; };
 		449665BBF23D492BB8C7ABCB9E248E77 /* Pods-HashingSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HashingSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4653FEB572588054EFA8D9DAC6534829 /* xxHash-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "xxHash-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		49F469F6A3262B6F6099456FD9576A47 /* Pods-HashingSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HashingSwift_Tests.modulemap"; sourceTree = "<group>"; };
-		4CD71F7D75CC8D62CD3B755E603FEF36 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4CD71F7D75CC8D62CD3B755E603FEF36 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4D7066DE58AFDF0D3402F53E6344D37A /* xxHash-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "xxHash-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		522E0500E95BB0E53B240981A12310EE /* Data+Copy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Copy.swift"; path = "CommonSwift/Classes/Extensions/Data+Copy.swift"; sourceTree = "<group>"; };
 		527CB15F34D5CD6C638B052CDCDC175D /* BigInt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BigInt.debug.xcconfig; sourceTree = "<group>"; };
@@ -280,7 +282,7 @@
 		98F56B20EF522196C62FA7ED5F5B6326 /* Blake2b.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blake2b.swift; path = Sources/Blake2/Blake2b.swift; sourceTree = "<group>"; };
 		9A2031C4E8BB9C304AA4A5DC508C0437 /* UInt256.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt256.swift; path = CommonSwift/Classes/Numerics/UInt256.swift; sourceTree = "<group>"; };
 		9BC28E6634C02F617D5D6D6D7C34E759 /* Hashing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Hashing.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F8FA30AD04410F88D70EB7E0ECA8E27 /* BigUInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BigUInt.swift; path = Sources/BigUInt.swift; sourceTree = "<group>"; };
 		A085ACC18579A0696A4187895D36E4C3 /* Data+Compressing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Compressing.swift"; path = "CommonSwift/Classes/Extensions/Data+Compressing.swift"; sourceTree = "<group>"; };
 		A0AE83E18EE35588D94306E30C15A70A /* Blake2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Blake2-prefix.pch"; sourceTree = "<group>"; };
@@ -296,7 +298,7 @@
 		B617A380EC13B2BE2AADF3FC1CD15542 /* Pods-HashingSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HashingSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
 		B6778FAF96132F397CC9BB5F302C9EB1 /* DataHex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataHex.swift; path = CommonSwift/Classes/Hex/DataHex.swift; sourceTree = "<group>"; };
 		B6F58AC3E19D1DD2A0C07246532F2217 /* Pods-HashingSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HashingSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B96BF77CF02CA9433F25940FE623F0C9 /* HashingSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HashingSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B96BF77CF02CA9433F25940FE623F0C9 /* HashingSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HashingSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BBE7574C75900A8892AA5B165F8913DA /* HashError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HashError.swift; sourceTree = "<group>"; };
 		BC0928BFAEF82755914DD9575EBB4431 /* Pods-HashingSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HashingSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
 		BD190AE6DF31941D3D613C16C2FDDE37 /* Pods-HashingSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HashingSwift_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -307,20 +309,20 @@
 		C2DE6905C04E59F5FD6648605AF22D08 /* HashingSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HashingSwift.modulemap; sourceTree = "<group>"; };
 		C38BD750BBF85151DEFC8541BBDA5357 /* Random.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Random.swift; path = Sources/Random.swift; sourceTree = "<group>"; };
 		C5F75B466C0D128C5B8CC6295B9E5D16 /* BigInt-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BigInt-prefix.pch"; sourceTree = "<group>"; };
-		C712125B3099915725704B33120FC2B1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C712125B3099915725704B33120FC2B1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D163FBBEDB3BA707C8C3C1F67A49AE6B /* BigInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BigInt.swift; path = Sources/BigInt.swift; sourceTree = "<group>"; };
 		D1CA975D28BB6EEAC106ABFD4B147996 /* BigInt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BigInt.release.xcconfig; sourceTree = "<group>"; };
 		D1FBC1BE46564C872188CB3BD66ACC6A /* Square Root.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Square Root.swift"; path = "Sources/Square Root.swift"; sourceTree = "<group>"; };
 		D20BEFB3B4DB33D4FA997F00576A5AB5 /* Pods-HashingSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HashingSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4D320848AB6D3CB71CF85B2CF444185 /* Base58Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Base58Swift-prefix.pch"; sourceTree = "<group>"; };
-		D7A0A18A9D7222ABE8142A885AC835AE /* blake2xs-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "blake2xs-ref.c"; path = "Sources/CBlake2/blake2xs-ref.c"; sourceTree = "<group>"; };
+		D7A0A18A9D7222ABE8142A885AC835AE /* blake2xs-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = "blake2xs-ref.c"; path = "Sources/CBlake2/blake2xs-ref.c"; sourceTree = "<group>"; };
 		DACFC3259FC37AB3483D47A0DD1A0299 /* XXH3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XXH3.swift; path = Sources/xxHash/xxh3/XXH3.swift; sourceTree = "<group>"; };
 		DB2E0D1DA10D77A532DFD00DCB60BA97 /* Division.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Division.swift; path = Sources/Division.swift; sourceTree = "<group>"; };
 		DE8D17281FFDE1C87AD52B45AEB5C7EF /* Pods-HashingSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HashingSwift_Example-dummy.m"; sourceTree = "<group>"; };
 		E033BF5EF4A1BB10E607AB70C8EC0BD6 /* Hashable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hashable.swift; path = Sources/Hashable.swift; sourceTree = "<group>"; };
 		E4DFFDB5369E56CDEE39F4ED98DC422D /* CommonSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CommonSwift-dummy.m"; sourceTree = "<group>"; };
 		E64256CE73FF09FD1FDC2AE477549829 /* xxHash-Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "xxHash-Common.swift"; path = "Sources/xxHash/xxHash-Common.swift"; sourceTree = "<group>"; };
-		E7DFAC89C2A223AB6ACEC5D201B7569F /* blake2xb-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "blake2xb-ref.c"; path = "Sources/CBlake2/blake2xb-ref.c"; sourceTree = "<group>"; };
+		E7DFAC89C2A223AB6ACEC5D201B7569F /* blake2xb-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = "blake2xb-ref.c"; path = "Sources/CBlake2/blake2xb-ref.c"; sourceTree = "<group>"; };
 		E836D8E844AEBFA875EF2E5377A6FE7B /* Pods-HashingSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HashingSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EC005AF66E94D92BCC2EE94EFCAF489A /* Pods-HashingSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HashingSwift_Tests-Info.plist"; sourceTree = "<group>"; };
 		F51E89A69A62F43E8C6B610030662406 /* ByteSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ByteSize.swift; path = CommonSwift/Classes/Numerics/Helpers/ByteSize.swift; sourceTree = "<group>"; };
@@ -448,7 +450,6 @@
 				E64256CE73FF09FD1FDC2AE477549829 /* xxHash-Common.swift */,
 				3A5966F25B349DCB9FDB7EF19D61B04D /* Support Files */,
 			);
-			name = "xxHash-Swift";
 			path = "xxHash-Swift";
 			sourceTree = "<group>";
 		};
@@ -494,7 +495,6 @@
 				8C49BFBCF0CCDF2BCB303508C1D38B83 /* UInt512.swift */,
 				88AE2813FEF225EAFECBD9F5D160E713 /* Support Files */,
 			);
-			name = CommonSwift;
 			path = CommonSwift;
 			sourceTree = "<group>";
 		};
@@ -643,7 +643,6 @@
 				FB456AA7BF7381F571EED600248FF40E /* Words and Bits.swift */,
 				8F2AF9636379136D4F3FE97AB88FA876 /* Support Files */,
 			);
-			name = BigInt;
 			path = BigInt;
 			sourceTree = "<group>";
 		};
@@ -687,7 +686,6 @@
 				D7A0A18A9D7222ABE8142A885AC835AE /* blake2xs-ref.c */,
 				290ABCF63E76CFBB50CF07F5ABE55270 /* Support Files */,
 			);
-			name = Blake2;
 			path = Blake2;
 			sourceTree = "<group>";
 		};
@@ -714,7 +712,6 @@
 				A673CA51497D478D6FAC8262D040DADC /* Blake2b.swift */,
 				7D444B35BD7783BA6A55188DBC8F6906 /* XX.swift */,
 			);
-			name = Hashers;
 			path = Hashers;
 			sourceTree = "<group>";
 		};
@@ -724,6 +721,7 @@
 				FC0794A4641E7FFEDE2FA47DA4129E0E /* DataSS58.swift */,
 				771EE8BAA55C5C6859B3165DE76BCC61 /* SS58.swift */,
 				6FAE6122DCC2DE363B8669EB78A85718 /* StringSS58.swift */,
+				115B43712966E67200AB7708 /* AccountId.swift */,
 			);
 			name = SS58;
 			path = HashingSwift/Classes/SS58;
@@ -750,7 +748,6 @@
 				12B61F62B62DE80EA464F5B57B594343 /* Base58.swift */,
 				8A939F6FF800531CB97CE55FBEEE18E5 /* Support Files */,
 			);
-			name = Base58Swift;
 			path = Base58Swift;
 			sourceTree = "<group>";
 		};
@@ -1097,6 +1094,7 @@
 				E8DE1F407A1D99BE470443DAD1CC3A9D /* HashError.swift in Sources */,
 				00BC7AFCA74A543776F5576BC1F318F9 /* Hashing.swift in Sources */,
 				4EEC22EA7BA1D3E536FF8EED5E2F11C9 /* HashingSwift-dummy.m in Sources */,
+				115B43722966E67200AB7708 /* AccountId.swift in Sources */,
 				390F518DD1D5BF5C8D6E0BD0F183AE17 /* SS58.swift in Sources */,
 				325FB73DD58899EA3C535A7D8F263F36 /* StringBase58.swift in Sources */,
 				1C7520A531E04F42C20B7B557DE40655 /* StringSS58.swift in Sources */,
@@ -1687,8 +1685,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
