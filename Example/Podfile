@@ -4,10 +4,10 @@ platform :ios, '13.0'
 
 target 'HashingSwift_Example' do
   pod 'HashingSwift', :path => '../'
-  pod 'CommonSwift', :git => 'https://github.com/sublabdev/common-swift.git', :commit => '8186f9973bc43039ddd531c839fd718e81e3b243'
-  pod 'xxHash-Swift'
-  pod 'Base58Swift'
-  pod 'Blake2'
+  pod 'CommonSwift', :git => 'https://github.com/sublabdev/common-swift.git', :branch => 'dev'
+  pod 'xxHash-Swift', '~> 1.1.1'
+  pod 'Base58Swift', '~> 2.1.10'
+  pod 'Blake2', '~> 0.1.2'
 
   target 'HashingSwift_Tests' do
     inherit! :search_paths
