@@ -329,6 +329,7 @@
 				"${BUILT_PRODUCTS_DIR}/Blake2/Blake2.framework",
 				"${BUILT_PRODUCTS_DIR}/CommonSwift/CommonSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/HashingSwift/HashingSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/keccak.c/keccak.framework",
 				"${BUILT_PRODUCTS_DIR}/xxHash-Swift/xxHash_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -338,6 +339,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Blake2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CommonSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HashingSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/keccak.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xxHash_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

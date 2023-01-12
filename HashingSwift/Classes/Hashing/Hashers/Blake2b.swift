@@ -1,11 +1,12 @@
 import Foundation
 import Blake2
 
+/// Blake hashing error types
+enum BlakeError: Error {
+    case hashingFailure(String)
+}
+
 private extension Data {
-    /// Blake hashing error types
-    enum BlakeError: Error {
-        case hashingFailure(String)
-    }
     
     /// Hashes the data using blake2b
     /// - Parameters:

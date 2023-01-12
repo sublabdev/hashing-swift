@@ -5,9 +5,6 @@ platform :ios, '13.0'
 target 'HashingSwift_Example' do
   pod 'HashingSwift', :path => '../'
   pod 'CommonSwift', :git => 'https://github.com/sublabdev/common-swift.git', :branch => 'dev'
-  pod 'xxHash-Swift', '~> 1.1.1'
-  pod 'Base58Swift', '~> 2.1.10'
-  pod 'Blake2', '~> 0.1.2'
 
   target 'HashingSwift_Tests' do
     inherit! :search_paths

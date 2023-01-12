@@ -14,8 +14,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
   s.source_files = 'HashingSwift/Classes/**/*'
   s.dependency 'CommonSwift'
-  s.dependency 'xxHash-Swift'
-  s.dependency 'Base58Swift'
-  s.dependency 'Blake2'
+  s.dependency 'xxHash-Swift', '~> 1.1.1'
+  s.dependency 'Base58Swift', '~> 2.1.10'
+  s.dependency 'Blake2', '~> 0.1.2'
+  s.dependency 'keccak.c', '~> 0.1.3'
   
 end
