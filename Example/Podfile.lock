@@ -4,7 +4,7 @@ PODS:
   - BigInt (5.0.0)
   - Blake2 (0.1.2)
   - CommonSwift (1.0.0):
-    - BigInt
+    - BigInt (~> 5.0.0)
   - HashingSwift (1.0.0):
     - Base58Swift (~> 2.1.10)
     - Blake2 (~> 0.1.2)
@@ -35,14 +35,14 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   CommonSwift:
-    :commit: e84a46f0d5511bdb98bf5c9a740b8d3b84037f3e
+    :commit: 24cc1514dedb0755a86ae8b6752778a4ff54fb95
     :git: https://github.com/sublabdev/common-swift.git
 
 SPEC CHECKSUMS:
   Base58Swift: 53d551f0b33d9478fa63b3445e453a772d6b31a7
   BigInt: 74b4d88367b0e819d9f77393549226d36faeb0d8
   Blake2: f33072b13349da1b8048a2bf26a3a24d4eac6dcc
-  CommonSwift: 74d8b4fb289ee38027278d41d84bfac3843da660
+  CommonSwift: ad350f0e06c040e5cb660cd7154f947851c73fbd
   HashingSwift: d97c9d264e558e471b15d4c65773104c587a9b4c
   keccak.c: 859583afdaccb4e4fcc0f0096064d101580313f4
   xxHash-Swift: 13ebcbfc48658a5acf3777751e64b18c0f110d25
