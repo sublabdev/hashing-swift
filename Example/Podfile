@@ -1,9 +1,10 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '13.0'
 
 target 'HashingSwift_Example' do
   pod 'HashingSwift', :path => '../'
+  pod 'CommonSwift', :git => 'https://github.com/sublabdev/common-swift.git', :branch => 'dev'
 
   target 'HashingSwift_Tests' do
     inherit! :search_paths
