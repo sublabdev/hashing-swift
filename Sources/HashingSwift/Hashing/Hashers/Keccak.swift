@@ -12,37 +12,22 @@
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
- * limitations under the License.
+ * limitati
+ * ons under the License.
  * 
  */
 
 import Foundation
-import keccak
+import KeccakSwift
 
 /// keccak hashing error types
 enum KeccakError: Error {
-    case internalFailure
     case invalidHashSize
 }
 
 private extension Data {
     private func keccak(bits: Int) throws -> Data {
-        var data = Data(count: bits / 8)
-
-        let result = data.withUnsafeMutableBytes { output in
-            withUnsafeBytes { input in
-                keccak_256(
-                    output.baseAddress?.assumingMemoryBound(to: UInt8.self), bits / 8,
-                    input.baseAddress?.assumingMemoryBound(to: UInt8.self), count
-                )
-            }
-        }
-        
-        guard result == 0 else {
-            throw KeccakError.internalFailure
-        }
-
-        return data
+        try Keccak.hash(data: self, rate: .keccak(.rate256), outputSize: .bits(bits))
     }
     
     /// Decodes data using keccak hash algorithm
